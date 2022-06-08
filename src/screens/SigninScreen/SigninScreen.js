@@ -20,7 +20,7 @@ const SigninScreen = () => {
 
   const onSignInPressed= () => { 
     console.warn("sign i")
-    // validate user after 
+    // This is a test push
 
     navigation.navigate('Home')
   }
