@@ -45,47 +45,24 @@ const SignUpScreen = () => {
  
         <Text style={styles.title}>Create an account</Text>
          <CustomInput 
-            placeholder="Name" 
+            placeholder="Username" 
             value={username} 
             setValue={setUsername}/>
 
          <CustomInput 
-            placeholder="Surname" 
+            placeholder="Email" 
             value={email} 
             setValue={setEmail}/>
 
          <CustomInput 
-            placeholder="Username" 
+            placeholder="Password" 
             value={password} 
             setValue={setPassword}
             secureTextEntry={true}
             />
 
          <CustomInput 
-            placeholder="Course" 
-            value={passwordRepeat} 
-            setValue={setPasswordRepeat}
-            secureTextEntry={true}/>
-
-          <CustomInput 
-            placeholder="Student number" 
-            value={passwordRepeat} 
-            setValue={setPasswordRepeat}
-            secureTextEntry={true}/>
-          <CustomInput 
-            placeholder="Email" 
-            value={passwordRepeat} 
-            setValue={setPasswordRepeat}
-            secureTextEntry={true}/>
-
-          <CustomInput 
-            placeholder="Password" 
-            value={passwordRepeat} 
-            setValue={setPasswordRepeat}
-            secureTextEntry={true}/>
-
-          <CustomInput 
-            placeholder="Renter Password" 
+            placeholder="Password Repeat" 
             value={passwordRepeat} 
             setValue={setPasswordRepeat}
             secureTextEntry={true}/>
@@ -97,7 +74,7 @@ const SignUpScreen = () => {
            <Text style={styles.link} onPress={onTermsOfUsePressed}>Terms of Use</Text> and
            <Text style={styles.link} onPress={onPrivacyPressed}> Privacy Policy </Text> </Text>
 
-           {/* <SocialSignInButton/> */}
+           <SocialSignInButton/>
 
 
           <CustomButton text="Have an Account ? Signin" onPress={onSignInPressed} type="TERTIARY"/>
