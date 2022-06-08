@@ -20,6 +20,7 @@ const SignUpScreen = () => {
     console.warn("sign in")
     navigation.navigate('ConfirmEmail')
   
+    
   }
 
   const onSignInPressed = () => { 
